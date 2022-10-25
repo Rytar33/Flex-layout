@@ -1,0 +1,256 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+*,*:before,*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:focus,:active {outline: none;}
+a:focus,a:active {outline: none;}
+
+nav,footer,header,aside {display: block;}
+
+html,body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+input,button,textarea {font-family: inherit;}
+
+input::-ms-clear {display: none;}
+button {cursor: pointer;}
+button::-moz-focus-inner {padding: 0; border: 0;}
+a,a:visited {text-decoration: none;}
+a:hover {text-decoration: none;}
+ul li {list-style: none;}
+img {vertical-align: top;}
+/*-------------------------------------------*/
+
+.wrapper {
+    min-height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1 1 auto;
+}
+
+/*Шапка страницы*/
+.header {
+    background-color: #445162;
+    color: #fff;
+    padding: 35px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-hi {
+    text-shadow: 0px 1px rgba(0, 0, 0, 0.3);
+}
+
+.hi {
+   font-size: 60px; 
+}
+
+.hi-list li {
+    background: url('../img/check-icon.png') left / 4.5% no-repeat;
+    font-size: 20px;
+    line-height: 36px;
+    padding: 0 0 0 23px;
+}
+
+.hi-list li:first-child {
+    margin: 20px 0 0 0;
+}
+
+.header .row-img {
+    justify-content: flex-end;
+    display: inline-flex;
+}
+
+.header .img {
+    width: 400px;
+    height: 100%;
+    flex-direction: row;
+}
+
+/*Главная часть страницы*/
+/*Первый блок*/
+.first-block {
+    padding: 30px 30px 0 30px;
+}
+
+.first-block .content {
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.first-block .img {
+    width: 500px;
+}
+
+
+.about-title {
+    font-size: 30px;
+    color: #445162;
+    padding-bottom: 10px;
+}
+
+.about-body {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.about-body p {
+    padding: 15px 0;
+}
+/*Второй блок*/
+.second-block {
+    background-color: #F5F5F5;
+}
+
+.second-block .content {
+    padding: 30px 30px 0 30px;
+}
+
+.second-block .body-content{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.second-block .main-title {
+    font-size: 30px;
+    color: #445162;
+    text-align: center;
+    margin: 0 0 20px 0;
+}
+
+.second-block .title-content {
+    font-size: 24px;
+    width: 100%;
+    color: #445162;
+    padding: 0 0 20px 0;
+}
+
+.second-block .block-gray {
+    flex: 0 0 200px;
+    margin-right: 15px;
+}
+
+.second-block .text-content {
+    font-size: 16px;
+    line-height: 24px;
+    padding-right: 10px;
+}
+.item {
+    flex: 0 1 50%;
+    display: flex;
+}
+.item-1 {
+    padding-bottom: 10px;
+}
+.item-2 {
+    padding-top: 10px;
+}
+/*Третий блок*/
+.third-block {
+    padding: 30px 30px 0 30px;
+}
+
+.third-block .content {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: stretch;
+    padding: 0 0 40px 0;
+}
+
+.third-block .main-title {
+    font-size: 30px;
+    color: #445161;
+    text-align: center;
+    padding: 0 0 20px 0;
+}
+
+.third-block .first-content,.third-block .second-content,.third-block .third-content {
+    max-width: 300px;
+    border: 2px solid #445161;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.third-block .title-content {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    background-color: #445161;
+}
+
+.third-block .white-content {
+    background-color: #fff;
+    color: #445161;
+    font-size: 40px;
+    text-transform: lowercase;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.third-block .content-block {
+    padding: 0 20px 20px 20px;
+    background-color: #445161;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.third-block .text-content {
+    color: #fff;
+    line-height: 24px;
+    padding: 20px 0;
+}
+
+.third-block .button {
+    display: block;
+    justify-content: center;
+    border: 1px solid;
+    font-size: 18px;
+    text-transform: lowercase;
+    font-weight: 700;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: #fff;
+    color: #445161;
+    width: 100%;
+}
+
+/*Футер страницы*/
+.footer {
+    width: 100%;
+    background-color: #F5F5F5;
+}
+
+.footer-row {
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #445162;
+    padding: 25px 0;
+}
